@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>接口模拟</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <form class="navbar-form navbar-left" role="search">
+            <div class="col-lg-2">
+                <div class="form-group">
+                    <select class="selectpicker show-tick form-control" name="">
+                        <option value="0">GET</option>
+                        <option value="1">POST</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <select class="selectpicker show-tick form-control" name="">
+                        <option value="0">http://www.baidu.com</option>
+                        <option value="1">http://www.qishon.com</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="接口地址" style="">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="form-group">
+                    <input type="submit" class="btn btn-danger" value="发送">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="panel-heading"><h1>接口请求参数</h1></div>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active form-data"><a href="javascript:void(0)">form-data</a></li>
+                <li role="presentation" class="row"><a href="javascript:void(0)">row</a></li>
+            </ul>
+            <!--接口请求参数 form-data-->
+            <div class="container" id="form-data" style="height: 434px;">
+                <div class="page-header">
+                    <button type="button" class="btn btn-success add">添加</button>
+                </div>
+                <div class="row">
+                    <div class="col-lg-11">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>字段名</th>
+                                <th>默认值</th>
+                                <th>类型</th>
+                                <th>备注</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td>
+                                    <select class="selectpicker show-tick form-control" name="">
+                                        <option value="0">全部</option>
+                                        <option value="1">11</option>
+                                        <option value="2">22</option>
+                                        <option value="3">33</option>
+                                        <option value="4">44</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><button type="button" class="btn btn-warning del">删除</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--接口请求参数 row-->
+            <div class="container" id="row" hidden>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <br>
+                        <textarea name="" cols="120" rows="20" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <h1>接口返回参数</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <br>
+                        <textarea name="" cols="120" rows="20" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <h1>格式化</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <br>
+                        <textarea name="" cols="120" rows="20" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<table id="appendTr" style="display: none;">
+    <tbody>
+    <tr>
+        <td><input type="text" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+        <td>
+            <select class="selectpicker show-tick form-control" name="">
+                <option value="0">全部</option>
+                <option value="1">11</option>
+                <option value="2">22</option>
+                <option value="3">33</option>
+                <option value="4">44</option>
+            </select>
+        </td>
+        <td><input type="text" class="form-control"></td>
+        <td><button type="button" class="btn btn-warning del">删除</button></td>
+    </tr>
+    </tbody>
+</table>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="send.js"></script>
+</body>
+</html>
